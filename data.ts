@@ -201,16 +201,16 @@ export const database: Record<string, SeasonData> = {
             rank: "Season In Progress",
             highlight: "Developing 4WD",
             points: "N/A",
-            teamPhoto: "./team/team25.jpg",
+            teamPhoto: "/team/team25.jpg",
             awards: [
                 { title: "Current Status", value: "Manufacturing Phase" }
             ]
         },
         members: {
             board: [
-                { id: 0, name: "Amogha Rao", role: "Team Captain", department: "Management", quote: "", image: "./fm_sr/amogha.jpg", socials: { linkedin: "https://www.linkedin.com/in/amogha-rao-ar/",phonenumber:+919986507801 } },
-                { id: 1, name: "Vandana Malhotra", role: "Mechanical Head", department: "Mechanical", quote: "", image: "./fm_sr/vandana.jpg", socials: { linkedin: "https://www.linkedin.com/in/vandana-malhotra-517999250/", phonenumber : +917700904153} },
-                { id: 2, name: "Krit Gupta", role: "Electrical Head", department: "Electrical", quote: "", image: "./fm_sr/krit.jpg", socials: { linkedin: "https://www.linkedin.com/in/krit-gupta-a939a1284/", phonenumber :+918073599506 } }
+                { id: 0, name: "Amogha Rao", role: "Team Captain", department: "Management", quote: "", image: "/fm_sr/amogha.jpg", socials: { linkedin: "https://www.linkedin.com/in/amogha-rao-ar/",phonenumber:+919986507801 } },
+                { id: 1, name: "Vandana Malhotra", role: "Mechanical Head", department: "Mechanical", quote: "", image: "/fm_sr/vandana.jpg", socials: { linkedin: "https://www.linkedin.com/in/vandana-malhotra-517999250/", phonenumber : +917700904153} },
+                { id: 2, name: "Krit Gupta", role: "Electrical Head", department: "Electrical", quote: "", image: "/fm_sr/krit.jpg", socials: { linkedin: "https://www.linkedin.com/in/krit-gupta-a939a1284/", phonenumber :+918073599506 } }
             ],
             core: [
                 { id: 0, name: "Ratish A.M", role: "Structures Lead", department: "Structures", quote: "", image: "./fm_sr/ratish.jpg", socials: { linkedin: "https://www.linkedin.com/in/ratish-a-m-419996219/" } },
