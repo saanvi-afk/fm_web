@@ -1,15 +1,16 @@
-
-import React, { useState } from 'react';
+import React, { lazy, Suspense, useState } from 'react';
 import { createRoot } from 'react-dom/client';
-import Landing from './Landing';
-import Team from './Team';
-import Cars from './Cars';
-import Media from './Media';
-import Sponsors from './Sponsors';
-import OurSponsors from './OurSponsors'; // New Component
-import JoinForm from './JoinForm';
-import Footer from './Footer';
 import './fonts.css';
+
+// Lazy load all page components to enable code splitting
+const Landing = lazy(() => import('./Landing'));
+const Team = lazy(() => import('./Team'));
+const Cars = lazy(() => import('./Cars'));
+const Media = lazy(() => import('./Media'));
+const Sponsors = lazy(() => import('./Sponsors'));
+const OurSponsors = lazy(() => import('./OurSponsors'));
+const JoinForm = lazy(() => import('./JoinForm'));
+const Footer = lazy(() => import('./Footer'));  // Lazy Footer too, as it has potential media (map iframe)
 
 const App = () => {
   const [page, setPage] = useState('landing');
@@ -28,6 +29,14 @@ const App = () => {
         if(aboutSection) aboutSection.scrollIntoView({ behavior: 'smooth' });
     }, 100);
   };
+
+  // Simple fallback loader (customize with spinner/CSS from your styles)
+  const Loader = () => (
+    <div className="flex items-center justify-center min-h-[50vh] text-gray-400">
+      <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-red-600"></div>
+      <span className="ml-2">Loading...</span>
+    </div>
+  );
 
   return (
     <div className="font-sans text-white bg-black min-h-screen flex flex-col">
@@ -167,19 +176,23 @@ const App = () => {
         )}
       </nav>
 
-      {/* Page Content */}
+      {/* Page Content - Wrapped in Suspense for lazy loading */}
       <main className="flex-grow">
-        {page === 'landing' && <Landing onNavigate={setPage} />}
-        {page === 'team' && <Team />}
-        {page === 'cars' && <Cars />}
-        {page === 'media' && <Media />}
-        {page === 'our-sponsors' && <OurSponsors />}
-        {page === 'sponsors' && <Sponsors />}
-        {page === 'join' && <JoinForm onNavigate={setPage} />}
+        <Suspense fallback={<Loader />}>
+          {page === 'landing' && <Landing onNavigate={setPage} />}
+          {page === 'team' && <Team />}
+          {page === 'cars' && <Cars />}
+          {page === 'media' && <Media />}
+          {page === 'our-sponsors' && <OurSponsors />}
+          {page === 'sponsors' && <Sponsors />}
+          {page === 'join' && <JoinForm onNavigate={setPage} />}
+        </Suspense>
       </main>
 
-      {/* Footer */}
-      <Footer />
+      {/* Footer - Also lazy loaded, but always rendered */}
+      <Suspense fallback={<div></div>}>  {/* Minimal fallback for Footer */}
+        <Footer />
+      </Suspense>
     </div>
   );
 };
