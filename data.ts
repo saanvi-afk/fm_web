@@ -526,7 +526,7 @@ export const database: Record<string, SeasonData> = {
             ],
             core: [
                 { id: 0, name: "Vismay Vivekanand Nayak", role: "Structures Head", department: "Mechanical", quote: "", image: "./fm_sr/place.jpeg", socials: { linkedin: "https://www.linkedin.com/in/vismay-nayak-846847190/" } },
-                { id: 1, name: "Satya Sai Nithin Datla", role: "Aerodynamics & Composites Head", department: "Mechanical", quote: "", image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Rahul&backgroundColor=b6e3f4", socials: { linkedin: "https://www.linkedin.com/in/satya-sai-nithin-datla/" } },
+                { id: 1, name: "Satya Sai Nithin Datla", role: "Aerodynamics & Composites Head", department: "Mechanical", quote: "", image: "./fm_sr/place.jpeg", socials: { linkedin: "https://www.linkedin.com/in/satya-sai-nithin-datla/" } },
                 { id: 2, name: "Parth Shingte", role: "E-Powertrain Head", department: "Electrical", quote: "", image: "./fm_sr/place.jpeg", socials: { linkedin: "https://www.linkedin.com/in/parth-shingte-3b336619a/" } },
                 { id: 3, name: "Kuna Abhinav", role: "Powertrain Head", department: "Electrical", quote: "", image: "./fm_sr/place.jpeg", socials: { linkedin: "https://www.linkedin.com/in/kuna-abhinav-9906451b2/" } },
                 { id: 4, name: "Yashaarth Kaushik", role: "Vehicle Dyanmics Head", department: "Mechanical", quote: "", image: "./fm_sr/place.jpeg", socials: { linkedin: "https://www.linkedin.com/in/yashaarth-kaushik-91346318a/" } },
