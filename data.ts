@@ -315,28 +315,28 @@ export const database: Record<string, SeasonData> = {
         },
         members: {
             board: [
-                { id: 0, name: "Vibhas Srivastava", role: "Team Manager", department: "Management", quote: "", image: "./Team member Photos '24/vibhaas.jpg", socials: { linkedin: "https://www.linkedin.com/in/vibhas-srivastava-087609280/" } },
-                { id: 1, name: "Arin Agrawal", role: "Electrical Head", department: "Electrical", quote: "", image: "./Team member Photos '24/arin.jpg", socials: { linkedin: "https://www.linkedin.com/in/arin-agarwal-026551382/" } },
-                { id: 2, name: "Joy Chaudhary", role: "Manufacturing Head", department: "Mechanical", quote: "", image: "./Team member Photos '24/joy.jpg", socials: { linkedin: "https://www.linkedin.com/in/joy-chaudhary-99aab9185/" } },
-                { id: 3, name: "Amber Bhargava", role: "Mechanical Head", department: "Mechanical", quote: "",image: "./Team member Photos '24/amber.jpg", socials: { linkedin: "https://www.linkedin.com/in/amber-bhargava-b11601290/" } }
+                { id: 51, name: "Vibhas Srivastava", role: "Team Manager", department: "Management", quote: "", image: "./Team member Photos '24/vibhaas.jpg", socials: { linkedin: "https://www.linkedin.com/in/vibhas-srivastava-087609280/" } },
+                { id: 52, name: "Arin Agrawal", role: "Electrical Head", department: "Electrical", quote: "", image: "./Team member Photos '24/arin.jpg", socials: { linkedin: "https://www.linkedin.com/in/arin-agarwal-026551382/" } },
+                { id: 53, name: "Joy Chaudhary", role: "Manufacturing Head", department: "Mechanical", quote: "", image: "./Team member Photos '24/joy.jpg", socials: { linkedin: "https://www.linkedin.com/in/joy-chaudhary-99aab9185/" } },
+                { id: 54, name: "Amber Bhargava", role: "Mechanical Head", department: "Mechanical", quote: "",image: "./Team member Photos '24/amber.jpg", socials: { linkedin: "https://www.linkedin.com/in/amber-bhargava-b11601290/" } }
             ],
             core: [
-                { id: 0, name: "Devyansh Joshi", role: "Aerodynamics Lead", department: "Mechanical", quote: "", image: "./Team member Photos '24/devuansh.jpg", socials: { linkedin: "https://www.linkedin.com/in/devyansh-joshi-b28416207/" } },
-                { id: 1, name: "Piyush Ghanti", role: "Composites Lead", department: "Mechanical", quote: "", image: "./Team member Photos '24/ghanti.jpg", socials: { linkedin: "https://www.linkedin.com/in/piyushganti/" } },
-                { id: 2, name: "Abhimanyu Garg", role: "Vehicle Dynamics Lead", department: "Mechanical", quote: "", image: "./Team member Photos '24/abhimanyu.jpg", socials: { linkedin: "https://www.linkedin.com/in/abhimanyu-garg-93ab09308/" } },
-                { id: 3, name: "Shiladitya Sanyal", role: "Transmission Lead", department: "Mechanical", quote: "", image: "./Team member Photos '24/laditya.jpg", socials: { linkedin: "https://www.linkedin.com/in/shiladityasanyal/" } },
-                { id: 4, name: "Arsh Singh", role: "E-Powertrain Lead", department: "Mechanical", quote: "", image: "./Team member Photos '24/arsh.jpeg", socials: { linkedin: "https://www.linkedin.com/in/arsh-singh-4953a7249/" } },
+                { id: 55, name: "Devyansh Joshi", role: "Aerodynamics Lead", department: "Mechanical", quote: "", image: "./Team member Photos '24/devuansh.jpg", socials: { linkedin: "https://www.linkedin.com/in/devyansh-joshi-b28416207/" } },
+                { id: 56, name: "Piyush Ganti", role: "Composites Lead", department: "Mechanical", quote: "", image: "./Team member Photos '24/ghanti.jpg", socials: { linkedin: "https://www.linkedin.com/in/piyushganti/" } },
+                { id: 57, name: "Abhimanyu Garg", role: "Vehicle Dynamics Lead", department: "Mechanical", quote: "", image: "./Team member Photos '24/abhimanyu.jpg", socials: { linkedin: "https://www.linkedin.com/in/abhimanyu-garg-93ab09308/" } },
+                { id: 58, name: "Shiladitya Sanyal", role: "Transmission Lead", department: "Mechanical", quote: "", image: "./Team member Photos '24/laditya.jpg", socials: { linkedin: "https://www.linkedin.com/in/shiladityasanyal/" } },
+                { id: 59, name: "Arsh Singh", role: "E-Powertrain Lead", department: "Mechanical", quote: "", image: "./Team member Photos '24/arsh.jpeg", socials: { linkedin: "https://www.linkedin.com/in/arsh-singh-4953a7249/" } },
             ],
             general: [
-                { id: 0, name: "Shrinidhi Deshmukh", role: "Structures", department: "Mechanical", quote: "", image: "./Team member Photos '24/srinidhi.jpg", socials: { linkedin: "https://www.linkedin.com/in/shrinidhi-deshmukh-511a88282/" } },
-                { id: 1, name: "Ananya Raulkar", role: "Vehicle Dyanmics", department: "Vehicle Dyanmics", quote: "", image: "./Team member Photos '24/ananya.jpg", socials: { linkedin: "https://www.linkedin.com/in/ananya-raulkar/" } },
-                { id: 2, name: "Chithrinesh CV", role: "Electronics and Controls", department: "Electronics and Controls", quote: "", image: "./Team member Photos '24/chitranesh.jpg", socials: { linkedin: "https://www.linkedin.com/in/c-v-chithrinesh-b53b9529a/" } },
-                { id: 3, name: "Jishnu Chattoraj", role: "Electronics and Controls", department: "Electronics and Controls", quote: "", image: "./Team member Photos '24/jishnu.jpg", socials: { linkedin: "https://www.linkedin.com/in/jishnu-chattoraj-75a72b301/" } },
-                { id: 4, name: "Rishit Singh", role: "Electronics and Controls", department: "Electronics and Controls", quote: "", image: "./Team member Photos '24/rishit.jpeg", socials: { linkedin: "https://www.linkedin.com/in/rishit-singh-716019280/" } },
-                { id: 5, name: "Vaibhav Agarwal", role: "Electronics and Controls", department: "Electronics and Controls", quote: "", image: "./Team member Photos '24/vaibhav.jpg", socials: { linkedin: "https://www.linkedin.com/in/vaibhav-agarwal-a5a5ab242/" } },
-                { id: 6, name: "Soham Bose", role: "Driverless", department: "Driverless", quote: "", image: "./Team member Photos '24/soham.jpg", socials: { linkedin: "https://www.linkedin.com/in/soham-bose-24672528b/" } },
-                { id: 7, name: "Rachel Koshy", role: "Management", department: "Management", quote: "", image: "./Team member Photos '24/rachel.jpeg", socials: { linkedin: "https://www.linkedin.com/in/rachel-koshy-257297260/" } },
-                { id: 8, name: "Keerthana Mukesh", role: "Management", department: "Management", quote: "", image: "./Team member Photos '24/keerthana.jpeg", socials: { linkedin: "#" } },
+                { id: 60, name: "Shrinidhi Deshmukh", role: "Structures", department: "Mechanical", quote: "", image: "./Team member Photos '24/srinidhi.jpg", socials: { linkedin: "https://www.linkedin.com/in/shrinidhi-deshmukh-511a88282/" } },
+                { id: 61, name: "Ananya Raulkar", role: "Vehicle Dyanmics", department: "Vehicle Dyanmics", quote: "", image: "./Team member Photos '24/ananya.jpg", socials: { linkedin: "https://www.linkedin.com/in/ananya-raulkar/" } },
+                { id: 62, name: "Chithrinesh CV", role: "Electronics and Controls", department: "Electronics and Controls", quote: "", image: "./Team member Photos '24/chitranesh.jpg", socials: { linkedin: "https://www.linkedin.com/in/c-v-chithrinesh-b53b9529a/" } },
+                { id: 63, name: "Jishnu Chattoraj", role: "Electronics and Controls", department: "Electronics and Controls", quote: "", image: "./Team member Photos '24/jishnu.jpg", socials: { linkedin: "https://www.linkedin.com/in/jishnu-chattoraj-75a72b301/" } },
+                { id: 64, name: "Rishit Singh", role: "Electronics and Controls", department: "Electronics and Controls", quote: "", image: "./Team member Photos '24/rishit.jpeg", socials: { linkedin: "https://www.linkedin.com/in/rishit-singh-716019280/" } },
+                { id: 65, name: "Vaibhav Agarwal", role: "Electronics and Controls", department: "Electronics and Controls", quote: "", image: "./Team member Photos '24/vaibhav.jpg", socials: { linkedin: "https://www.linkedin.com/in/vaibhav-agarwal-a5a5ab242/" } },
+                { id: 66, name: "Soham Bose", role: "Driverless", department: "Driverless", quote: "", image: "./Team member Photos '24/soham.jpg", socials: { linkedin: "https://www.linkedin.com/in/soham-bose-24672528b/" } },
+                { id: 67, name: "Rachel Koshy", role: "Management", department: "Management", quote: "", image: "./Team member Photos '24/rachel.jpeg", socials: { linkedin: "https://www.linkedin.com/in/rachel-koshy-257297260/" } },
+                { id: 68, name: "Keerthana Mukesh", role: "Management", department: "Management", quote: "", image: "./Team member Photos '24/keerthana.jpeg", socials: { linkedin: "#" } },
             ]
         },
         hasCar: true
@@ -616,8 +616,8 @@ export const database: Record<string, SeasonData> = {
             name: "FM20",
             competitionCode:"02",
             type:"CV",
-            customStat1: { label: "Power", value: "79 BHP"},
-            customStat2: { label: "Torque", value: "53 Nm" },
+            customStat1: { label: "Torque", value: "53 Nm"},
+            customStat2: { label: "Power", value: "79 BHP" },
             engine: "Honda CBR 600RR, PC 40 ",
             displacement:"",
             induction:'',
@@ -642,6 +642,7 @@ export const database: Record<string, SeasonData> = {
             teamPhoto: "./team/team19.jpeg",
             awards: [
                 { title: "Overall Formula Bharat", value: "#9" },
+                { title: "Cost & Manufacturing", value: "#3" },
                 { title: "Engineering Design", value: "#21" },
             ]
         },
