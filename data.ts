@@ -1404,7 +1404,7 @@ export const magazines = [
 export const contactDetails = {
     manager: {
         name: "Amogha Rao",
-        phone: "+91 98765 43210",
+        phone: "+91 99865 07801",
         email: "formulamanipal24@gmail.com"
     },
     socials: [
