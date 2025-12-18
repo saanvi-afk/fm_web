@@ -351,7 +351,7 @@ export const database: Record<string, SeasonData> = {
             engine: "Honda CBR 600RR PC37, 2003 ",
             displacement:"600cc",
             induction:'56Nm (torque)',
-            powerOutput:'63kW',
+            powerOutput:'85 BHP',
             image:'./cars/co1.jpg',
             description: "The FM24 embodied our team's engineering prowess, powered by a Honda CBR 600RR PC37 (2003) engine yielding 63kW and 56Nm of torque in a 229kg tubular spaceframe chassis of AISI 1018 steel. With CFRP bodywork, double wishbone suspension (front pullrod, rear pushrod), Drexler LSD, and Hoosier slicks, it delivered razor-sharp handling. Motec ECU and custom DAQ backed its 4th overall at Formula Bharat, plus 1st in Cost & Manufacturing and 4th in Engineering Design—proving efficient innovation wins races.",
             detailedSpecs: {
@@ -756,7 +756,7 @@ export const database: Record<string, SeasonData> = {
                 tires: "Hoosier 18 × 7.5 × 10 racing slicks mounted on 10-inch Keizer rims with aluminium wheel centers.",
                 transmission: "6-speed sequential gearbox with Drexler clutch-pack type limited slip differential featuring six torque biasing ratios, and electropneumatic clutching and shifting with titanium driveshafts.",
                 electronics: "Equipped with a MoTeC M400 ECU and AiM EVO4 data logger integrated with myRIO.",
-                suspension: "ndependent double-wishbone suspension with pullrod front and pushrod rear setup, Öhlins dampers, and adjustable Ackermann steering.",
+                suspension: "Independent double-wishbone suspension with pullrod front and pushrod rear setup, Öhlins dampers, and adjustable Ackermann steering.",
                 ergonomics: "Fixed seat and steering wheel with fore-aft pedal adjustment of 25 mm, wet lay-up carbon seat with padded lumbar and knee protection, 60 mm Ethafoam head support, and 210-degree side visibility.",
         }
     },  
