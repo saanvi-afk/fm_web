@@ -241,7 +241,7 @@ export const database: Record<string, SeasonData> = {
                 { id: 15, name: "Devadathan R Menon", role: "", department: "Transmission", quote: "Junior Engineer", image: "./fm_jr/dev.jpg", socials: { linkedin: "https://www.linkedin.com/in/devadathan-r-menon-705440360/" } },
                 { id: 16, name: "Saksham Agrawal", role: "", department: "Transmission", quote: "Junior Engineer", image: "./fm_jr/saksham.jpg", socials: { linkedin: "https://www.linkedin.com/in/saksham-agrawal-462698311/" } },
                 { id: 17, name: "Nitha B Venugopal", role: "", department: "Transmission", quote: "Junior Engineer", image: "./fm_jr/nitha.jpg", socials: { linkedin: "https://www.linkedin.com/in/nitha-b-6329742b8/" } },
-                { id: 18, name: "Ishan Panchal", role: "", department: "E-Powertrain", quote: "", image: "./fm_sr/place.jpeg", socials: { linkedin: "https://www.linkedin.com/in/ishan-panchal-b839672a9/" } },
+                { id: 18, name: "Ishan Panchal", role: "", department: "E-Powertrain", quote: "", image: "./fm_sr/ishaan.jpeg", socials: { linkedin: "https://www.linkedin.com/in/ishan-panchal-b839672a9/" } },
                 { id: 19, name: "raghunandhan prakash", role: "", department: "E-Powertrain", quote: "Junior Engineer", image: "./fm_sr/raghu.jpg", socials: { linkedin: "https://www.linkedin.com/in/raghunandhan-prakash-134867254/" } },
                 { id: 20, name: "ANUSHA SAMAL", role: "", department: "E-Powertrain", quote: "Junior Engineer", image: "./fm_jr/anusha.jpg", socials: { linkedin: "https://in.linkedin.com/in/anusha-samal-2a8296256" } },
                 { id: 21, name: "ADIT JINDAL", role: "", department: "E-Powertrain", quote: "Junior Engineer", image: "./fm_jr/adit.jpg", socials: { linkedin: "https://www.linkedin.com/in/adit-jindal-58098b286/" } },
@@ -1405,7 +1405,7 @@ export const contactDetails = {
     manager: {
         name: "Amogha Rao",
         phone: "+91 99865 07801",
-        email: "formulamanipal24@gmail.com"
+        email: "formulamanipal@manipal.edu"
     },
     socials: [
         { icon: "fab fa-instagram", link: "https://www.instagram.com/formulamanipal/" },
