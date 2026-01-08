@@ -377,8 +377,8 @@ export const database: Record<string, SeasonData> = {
         },
         members: {
             board: [
-                { id: 0, name: "Ishan Purey", role: "Team Manager", department: "Team Manager", quote: "NA", image: "./fm_sr/place.jpeg", socials: { linkedin: "https://www.linkedin.com/in/ishaanpurey/" } },
-                { id: 1, name: "Aarav Bagga", role: "Team Leader", department: "Team Leader", quote: "", image: "./fm_sr/place.jpeg", socials: { linkedin: "https://www.linkedin.com/in/arav-bagga/" } },
+                { id: 0, name: "Ishaan Purey", role: "Team Manager", department: "Team Manager", quote: "NA", image: "./fm_sr/place.jpeg", socials: { linkedin: "https://www.linkedin.com/in/ishaanpurey/" } },
+                { id: 1, name: "Arav Bagga", role: "Team Leader", department: "Team Leader", quote: "", image: "./fm_sr/place.jpeg", socials: { linkedin: "https://www.linkedin.com/in/arav-bagga/" } },
                 { id: 2, name: "Parthiv Patel", role: "Team Captain", department: "Team Captain", quote: "", image: "./fm_sr/place.jpeg", socials: { linkedin: "https://www.linkedin.com/in/parthiv-patel-a05082154/" } },
             ],
             core: [
@@ -398,7 +398,7 @@ export const database: Record<string, SeasonData> = {
                 { id: 3, name: "Harshiv Balwani", role: "", department: "Combustion", quote: "", image: "./fm_sr/place.jpeg", socials: { linkedin: "https://www.linkedin.com/in/harshiv-balwani-ba4191258/" } },
                 { id: 4, name: "Jithin Joseph", role: "", department: "Combustion", quote: "", image: "./fm_sr/place.jpeg", socials: { linkedin: "https://www.linkedin.com/in/harshiv-balwani-ba4191258/" } },
                 { id: 5, name: "Keshav Varma", role: "", department: "Combustion", quote: "", image: "./fm_sr/place.jpeg", socials: { linkedin: "" } },
-                { id: 6, name: "Shreyaas Ranjan Patekar", role: "", department: "Combustion", quote: "", image: "./fm_sr/place.jpeg", socials: { linkedin: "" } },
+                { id: 6, name: "Shreyaas Rajan Patekar", role: "", department: "Combustion", quote: "", image: "./fm_sr/place.jpeg", socials: { linkedin: "" } },
                 { id: 7, name: "Soham Kolambe", role: "", department: "Combustion", quote: "", image: "./fm_sr/place.jpeg", socials: { linkedin: "#" } },
             ]
         },
@@ -463,18 +463,6 @@ export const database: Record<string, SeasonData> = {
             ],
 
           general: [
-                { id: 0, name: "Aditya Jain", role: "", department: "Combustion", quote: "", image: "./fm_sr/place.jpeg", socials: { linkedin: "https://www.linkedin.com/in/dipsiteadi/" } },
-                { id: 1, name: "Arjun Aravind", role: "", department: "Combustion", quote: "", image: "./fm_sr/place.jpeg", socials: { linkedin: "https://www.linkedin.com/in/arjun-aravind-463608209/" } },
-                { id: 2, name: "Bharadwaj Ongole", role: "", department: "Combustion", quote: "", image: "./fm_sr/place.jpeg", socials: { linkedin: "https://www.linkedin.com/in/sai-bharadwaj-ongole-84a46b143/" } },
-                { id: 3, name: "Uddhav Mahendra Pratap", role: "", department: "Combustion", quote: "", image: "./fm_sr/place.jpeg", socials: { linkedin: "https://www.linkedin.com/in/uddhav-mahendra-pratap-46125621b/" } },
-                { id: 4, name: "V.Kr.Venkatachalam", role: "", department: "Combustion", quote: "", image: "./fm_sr/place.jpeg", socials: { linkedin: "https://www.linkedin.com/in/venkatachalam-krishnan-615b84245/" } },
-                { id: 5, name: "Arnav Dabak", role: "", department: "Electric", quote: "", image: "./fm_sr/place.jpeg", socials: { linkedin: "https://www.linkedin.com/in/arnav-dabak/" } },
-                { id: 6, name: "Ayush Lokare", role: "", department: "Electric", quote: "", image: "./fm_sr/place.jpeg", socials: { linkedin: "https://www.linkedin.com/in/ayushlokare6942/" } },
-                { id: 7, name: "Bratish Saha", role: "", department: "Electric", quote: "", image: "./fm_sr/place.jpeg", socials: { linkedin: "https://www.linkedin.com/in/bratish-saha5279/" } },
-                { id: 8, name: "Hassan Mohd Esa Lashkari", role: "", department: "Electric", quote: "", image: "./fm_sr/place.jpeg", socials: { linkedin: "https://www.linkedin.com/in/hassan-lashkari8251/" } },
-                { id: 9, name: "M Laxmen", role: "", department: "Electric", quote: "", image: "./fm_sr/place.jpeg", socials: { linkedin: "https://www.linkedin.com/in/laxmen-murali-/" } },
-                { id: 10, name: "Paramjit Singh", role: "", department: "Electric", quote: "", image: "./fm_sr/place.jpeg", socials: { linkedin: "https://www.linkedin.com/in/paramjit-singh/" } },
-                { id: 11, name: "Parth Behede", role: "", department: "Electric", quote: "", image: "./fm_sr/place.jpeg", socials: { linkedin: "https://www.linkedin.com/in/parth-behede/" } }
                 ]
         },
         hasCar:true
@@ -1366,21 +1354,41 @@ export const database: Record<string, SeasonData> = {
 export const sponsors: Sponsor[] = [
     { name: "MAHE", url: "https://www.manipal.edu/mit.html",image:'./sponsors/mahe_logo.png', description: "Manipal Academy of Higher Education (MAHE), located in Manipal, Karnataka, is one of India's leading private universities. Established in 1953, MAHE offers a wide range of undergraduate, postgraduate, and doctoral programs across various disciplines such as engineering, medicine, management, humanities, and social sciences. The university is known for its excellent academic standards, world-class infrastructure, and state-of-the-art research facilities." },
     { name: "BATEMO", url: "https://www.batemo.com/",image:'./sponsors/batemo.png', description: "Batemo specializes in high-precision simulation software for lithium-ion batteries, they create physical models and help with challenges faced in battery development. They have also partnered with online simulation environments like MATLAB, AVL Cruise etc., to implement design and develop physical battery models using the data in their battery library." },
-    { name: "ANALOG DEVICES", url: "https://www.analog.com/en/index.html",image:'./sponsors/analog.png',  description: "Analog Devices is a global leader in high-performance signal processing technology, delivering innovative solutions that bridge the physical and digital worlds. Renowned for its precision, reliability, and advanced engineering, Analog Devices offers a wide range of products, including sensors, data converters, and power management systems." },
-    { name: "TEAL", url: "https://www.titanteal.com/",image:'./sponsors/teal.png',description: "We're deeply grateful to Titan Engineering & Automation Limited for their generous sponsorship. Their support is invaluable in helping us reach new milestones and inspiring our team. Specializing in high-precision component manufacturing and designing and automation machine manufacturing, TEAL's journey from inception to expansion epitomizes innovation and excellence—qualities we aspire to emulate." },
-    { name: "EPLAN", url: "https://www.eplan-software.com/", image:'./sponsors/eplan.png', description: "EPLAN is a global leader in electrical engineering software, providing cutting-edge solutions for designing and automating electrical, fluid, and control systems. Their platform streamlines the entire engineering process, enabling seamless collaboration across industries such as automotive, energy, and industrial automation." },
     { name: "STYRENIX", url: "https://styrenix.com/", image:'./sponsors/styrenix.png',description: "Styrenix is a leading manufacturer of high-performance styrenic polymers, offering innovative material solutions for various industries such as automotive, electronics, and healthcare. With a strong focus on sustainability and advanced polymer technologies, Styrenix develops customized products that enhance durability, performance, and design flexibility." },
-    { name: "TOOLCON SYSTEMS", url: "https://www.toolcon.com/", image:'./sponsors/toolcon.png', description: "" },
-    { name: "ADOR", url: "https://www.adorindia.com/", image:'./sponsors/ador_logo.png', description: "" },
+     { name: "EPLAN", url: "https://www.eplan-software.com/", image:'./sponsors/eplan.png', description: "EPLAN is a global leader in electrical engineering software, providing cutting-edge solutions for designing and automating electrical, fluid, and control systems. Their platform streamlines the entire engineering process, enabling seamless collaboration across industries such as automotive, energy, and industrial automation." },
+     { name: "TEAL", url: "https://www.titanteal.com/",image:'./sponsors/teal.png',description: "We're deeply grateful to Titan Engineering & Automation Limited for their generous sponsorship. Their support is invaluable in helping us reach new milestones and inspiring our team. Specializing in high-precision component manufacturing and designing and automation machine manufacturing, TEAL's journey from inception to expansion epitomizes innovation and excellence—qualities we aspire to emulate." },
+    { name: "ANALOG DEVICES", url: "https://www.analog.com/en/index.html",image:'./sponsors/analog.png',  description: "Analog Devices is a global leader in high-performance signal processing technology, delivering innovative solutions that bridge the physical and digital worlds. Renowned for its precision, reliability, and advanced engineering, Analog Devices offers a wide range of products, including sensors, data converters, and power management systems." },
     { name: "EBLU", url: "https://www.eblu.in/",  image:'./sponsors/eblu_logo.png',description: "" },
+   { name: "TOOLCON SYSTEMS", url: "https://www.toolcon.com/", image:'./sponsors/toolcon.png', description: "" },
+    {name : "FESTO", url:"https://www.festo.com/in/en/",image:"./sponsors/festo.png",description:""}, 
+    {name : "VECMOCON", url:"https://vecmocon.com/",image:"./sponsors/vecmoccon.png",description:""},
+    { name: "ADOR", url: "https://www.adorindia.com/", image:'./sponsors/ador_logo.png', description: "" },
+     { name: "AMADA", url: "https://www.amadaindia.co.in/", image:'./sponsors/amada.png', description: "" },
+     { name: "SIKA", url: "https://ind.sika.com/",image:'./sponsors/sika_logo.png', description: "" },
+     {name : "BENDER", url:"",image:"./sponsors/bender.png",description:""},
     { name: "FLUKE", url: "https://www.fluke.com/en-in", image:'./sponsors/fluke_logo.png', description: "" },
     { name: "RHEINMETALL", url: "https://www.rheinmetall.com/en", image:'./sponsors/rheinmetall.png', description: "" },
-    { name: "BENDER", url: "https://www.bender-in.com/", image:'./sponsors/bender.png', description: "" },
-    { name: "AMADA", url: "https://www.amadaindia.co.in/", image:'./sponsors/amada.png', description: "" },
-    { name: "FRACKTAL WORKS", url: "https://fracktal.in/",image:'./sponsors/fracktal.png', description: "" },
-    { name: "SIKA", url: "https://ind.sika.com/",image:'./sponsors/sika_logo.png', description: "" },
+    {name : "CHASSISM", url:"https://www.chassissim.com/",image:"./sponsors/chassism_logo.png",description:""},
+    {name : "BHOR", url:"https://bhor.com/",image:"./sponsors/bhor.png",description:""},
+    {name : "M2M ", url:"https://www.m2mrepairs.in/",image:"./sponsors/m2m.png",description:""},
+    {name : "EV TECH", url:"https://evtechnews.in/",image:"./sponsors/ev_tech.png",description:""},
+    {name : "LPS BOSSARD", url:"https://www.bossard.com/in-en/about-us/bossard-india/",image:"./sponsors/lps.png",description:""},
     { name: "LA DIVITA", url: "https://www.instagram.com/ladolcevita_vadodara/?hl=en", image:'./sponsors/la.png',description: "" },
-    { name: "UNITED RUBBER INDUSTRIES", url: "https://unitedrubber.com/",image:'./sponsors/united.png', description: "" }
+    {name : "EV REPORTER", url:"https://evreporter.com/",image:"./sponsors/evreporter.png",description:""},
+    {name : "NORTON", url:"https://www.nortonabrasives.com/en-us/product/abrasives/sandpaper-rolls",image:"./sponsors/norton.png",description:""},
+    {name : "WAGH BAKRI", url:"https://www.waghbakritea.com/",image:"./sponsors/wagh.png",description:""},
+    {name : "ANSYS", url:"http://ansys.com/en-in",image:"./sponsors/ansys.png",description:""},
+    {name : "DASSAULT SYSTEMS", url:"https://www.3ds.com/",image:"./sponsors/dassault.png",description:""},
+    {name : "MEKUVA", url:"https://mekuva.com/",image:"./sponsors/mekuva.png",description:""},
+    {name : "FLAUTA", url:"https://www.flautacustoms.com/",image:"./sponsors/flauta.png",description:""},
+    {name : "STATUS FURNITURE", url:"https://statusfurniture.in/",image:"./sponsors/status.png",description:""},
+    {name : "PPI", url:"",image:"./sponsors/ppi.png",description:""},
+    {name : "AFLON ENGINEERING", url:"https://www.aflonindia.com/",image:"./sponsors/aflon.png",description:""},
+    {name : "BANGALORE MIRROR", url:"https://bangaloremirror.indiatimes.com/",image:"./sponsors/blr.png",description:""},
+    {name : "INSTITUITIONS INNOVATION COUNCIL", url:"https://iic.mic.gov.in/assets/html/index.html",image:"./sponsors/iic.png",description:""},
+   
+
+
 ];
 export const newspaperClippings = [
     { title: "India's student led EV engineering", date: "Nov 2025", image: "./covers/evtech.png", link: "https://evreporter.com/formula-manipals-transition-to-electric-mobility-a-deep-dive-into-indias-student-led-ev-engineering/" },
