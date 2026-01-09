@@ -139,9 +139,13 @@ export default function Team() {
 
                 <div className="flex items-center gap-4 mt-4 pt-6 border-t border-neutral-800">
                     <span className="text-gray-500 text-xs font-bold uppercase tracking-widest mr-2">Connect:</span>
-                    <a href={selectedMember.socials.linkedin} className="group flex items-center justify-center w-10 h-10 rounded-full border border-gray-700 hover:border-blue-500 hover:bg-blue-500/10 transition-all">
+                    <a href={selectedMember.socials.linkedin}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group flex items-center justify-center w-10 h-10 rounded-full border border-gray-700 hover:border-blue-500 hover:bg-blue-500/10 transition-all"
+                        >
                         <i className="fab fa-linkedin-in text-gray-400 group-hover:text-blue-500"></i>
-                    </a>
+                        </a>
                     {selectedMember.socials.phonenumber && (
                     <a href={`tel:${selectedMember.socials.phonenumber}`}
                         className="group flex items-center justify-center w-10 h-10 rounded-full border border-gray-700 hover:border-blue-500 hover:bg-blue-500/10 transition-all"
