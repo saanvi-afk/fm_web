@@ -4,7 +4,7 @@ export const appConfig = {
         isOpen: false, // Set to TRUE so the Apply Now button works immediately
         // To link to Excel: Create a Google Sheet -> Extensions -> Apps Script -> Deploy as Web App -> Paste URL here
         // The JoinForm component is set up to POST data to this URL
-        googleSheetScriptUrl: "https://script.google.com/macros/s/YOUR_SCRIPT_ID_HERE/exec",
+        googleSheetScriptUrl: "https://script.google.com/macros/s/AKfycbxTotggT69NMKX2CiOdf75KUiwqYHqspveSXMfvEQEPkXr5GscS_vXivACzartVja-F/exec",
     },
     sponsorship: {
         // Link to your external form (Google Form, Typeform, etc.)
@@ -1368,7 +1368,7 @@ export const sponsors: Sponsor[] = [
      {name : "BENDER", url:"",image:"./sponsors/bender.png",description:""},
     { name: "FLUKE", url: "https://www.fluke.com/en-in", image:'./sponsors/fluke_logo.png', description: "" },
     { name: "RHEINMETALL", url: "https://www.rheinmetall.com/en", image:'./sponsors/rheinmetall.png', description: "" },
-    {name : "CHASSISM", url:"https://www.chassissim.com/",image:"./sponsors/chassism_logo.png",description:""},
+    {name : "CHASSISSIM", url:"https://www.chassissim.com/",image:"./sponsors/chassism_logo.png",description:""},
     {name : "BHOR", url:"https://bhor.com/",image:"./sponsors/bhor.png",description:""},
     {name : "M2M ", url:"https://www.m2mrepairs.in/",image:"./sponsors/m2m.png",description:""},
     {name : "EV TECH", url:"https://evtechnews.in/",image:"./sponsors/ev_tech.png",description:""},

@@ -8,6 +8,8 @@ export default function JoinForm({ onNavigate }: { onNavigate: (page: string) =>
       regNum: '',
       email: '',
       phone: '',
+      branch: '',
+      year: '',
       department: '',
       reason: ''
   });
@@ -19,21 +21,20 @@ export default function JoinForm({ onNavigate }: { onNavigate: (page: string) =>
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
+    // Final validation check for phone number
+    if (!/^\d{10}$/.test(formData.phone)) {
+        alert("Please enter a valid 10-digit phone number.");
+        return;
+    }
+
     // LOGIC TO "LINK TO EXCEL"
-    // To make this work:
-    // 1. Set up a Google Sheet and Apps Script as a Web App (doGET/doPOST).
-    // 2. Put that URL in data.ts -> appConfig.recruitment.googleSheetScriptUrl
-    // 3. The code below sends the data.
-    
     const scriptURL = appConfig.recruitment.googleSheetScriptUrl;
 
     if (scriptURL) {
-        // Create FormData object (standard for Apps Script Web App forms)
         const data = new FormData();
         Object.keys(formData).forEach(key => data.append(key, (formData as any)[key]));
         
-        // Use 'no-cors' mode. You won't see the JSON response, but the data will be sent.
-        // This prevents the CORS error in the browser console.
+        // Use 'no-cors' mode to avoid CORS issues while sending data to Google Apps Script
         fetch(scriptURL, { method: 'POST', body: data, mode: 'no-cors' })
             .then(() => console.log('Form submitted successfully'))
             .catch(error => console.error('Error!', error.message));
@@ -83,31 +84,74 @@ export default function JoinForm({ onNavigate }: { onNavigate: (page: string) =>
             </div>
 
             <form onSubmit={handleSubmit} className="space-y-8">
+                {/* Personal Info Row */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="space-y-2">
                         <label className="text-xs font-bold text-gray-400 uppercase tracking-wider">Full Name</label>
-                        <input name="fullName" onChange={handleChange} type="text" required className="w-full bg-black border border-neutral-700 rounded-xl px-4 py-3 text-white focus:border-red-600 focus:outline-none transition-colors" placeholder="John Doe" />
+                        <input name="fullName" onChange={handleChange} type="text" required className="w-full bg-black border border-neutral-700 rounded-xl px-4 py-3 text-white focus:border-red-600 focus:outline-none transition-colors" placeholder="Oscar Pia..." />
                     </div>
                     <div className="space-y-2">
                         <label className="text-xs font-bold text-gray-400 uppercase tracking-wider">Registration Number</label>
-                        <input name="regNum" onChange={handleChange} type="text" required className="w-full bg-black border border-neutral-700 rounded-xl px-4 py-3 text-white focus:border-red-600 focus:outline-none transition-colors" placeholder="2109..." />
+                        <input name="regNum" onChange={handleChange} type="text" required className="w-full bg-black border border-neutral-700 rounded-xl px-4 py-3 text-white focus:border-red-600 focus:outline-none transition-colors" placeholder="2509..." />
                     </div>
                 </div>
 
+                {/* Contact Info Row */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="space-y-2">
                         <label className="text-xs font-bold text-gray-400 uppercase tracking-wider">Email Address</label>
-                        <input name="email" onChange={handleChange} type="email" required className="w-full bg-black border border-neutral-700 rounded-xl px-4 py-3 text-white focus:border-red-600 focus:outline-none transition-colors" placeholder="john@example.com" />
+                        <input name="email" onChange={handleChange} type="email" required className="w-full bg-black border border-neutral-700 rounded-xl px-4 py-3 text-white focus:border-red-600 focus:outline-none transition-colors" placeholder="oscar@example.com" />
                     </div>
                     <div className="space-y-2">
-                        <label className="text-xs font-bold text-gray-400 uppercase tracking-wider">Phone Number</label>
-                        <input name="phone" onChange={handleChange} type="tel" required className="w-full bg-black border border-neutral-700 rounded-xl px-4 py-3 text-white focus:border-red-600 focus:outline-none transition-colors" placeholder="+91..." />
+                        <label className="text-xs font-bold text-gray-400 uppercase tracking-wider">Phone Number (10 Digits)</label>
+                        <input 
+                            name="phone" 
+                            onChange={handleChange} 
+                            type="tel" 
+                            pattern="[0-9]{10}" 
+                            maxLength={10}
+                            title="Please enter a 10-digit mobile number"
+                            required 
+                            className="w-full bg-black border border-neutral-700 rounded-xl px-4 py-3 text-white focus:border-red-600 focus:outline-none transition-colors" 
+                            placeholder="9876543210" 
+                        />
                     </div>
                 </div>
 
+                {/* Academic Info Row */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div className="space-y-2">
+                        <label className="text-xs font-bold text-gray-400 uppercase tracking-wider">Branch</label>
+                        <input 
+                            name="branch" 
+                            onChange={handleChange} 
+                            type="text" 
+                            required 
+                            className="w-full bg-black border border-neutral-700 rounded-xl px-4 py-3 text-white focus:border-red-600 focus:outline-none transition-colors" 
+                            placeholder="e.g. Mechanical, CSE, E&E" 
+                        />
+                    </div>
+                    <div className="space-y-2">
+                        <label className="text-xs font-bold text-gray-400 uppercase tracking-wider">Year of Study</label>
+                        <select 
+                            name="year" 
+                            onChange={handleChange} 
+                            required
+                            className="w-full bg-black border border-neutral-700 rounded-xl px-4 py-3 text-white focus:border-red-600 focus:outline-none transition-colors appearance-none cursor-pointer"
+                        >
+                            <option value="">Select Year...</option>
+                            <option value="1st Year">1st Year</option>
+                            <option value="2nd Year">2nd Year</option>
+                            <option value="3rd Year">3rd Year</option>
+                            <option value="4th Year">4th Year</option>
+                        </select>
+                    </div>
+                </div>
+
+                {/* Department Selection */}
                 <div className="space-y-2">
                     <label className="text-xs font-bold text-gray-400 uppercase tracking-wider">Preferred Department</label>
-                    <select name="department" onChange={handleChange} className="w-full bg-black border border-neutral-700 rounded-xl px-4 py-3 text-white focus:border-red-600 focus:outline-none transition-colors appearance-none cursor-pointer">
+                    <select name="department" onChange={handleChange} required className="w-full bg-black border border-neutral-700 rounded-xl px-4 py-3 text-white focus:border-red-600 focus:outline-none transition-colors appearance-none cursor-pointer">
                         <option value="">Select a department...</option>
                         {subsystems.filter(s => s.name !== 'Management').map(s => (
                             <option key={s.name} value={s.name}>{s.name}</option>
@@ -116,6 +160,7 @@ export default function JoinForm({ onNavigate }: { onNavigate: (page: string) =>
                     </select>
                 </div>
 
+                {/* Reason / Motivation */}
                 <div className="space-y-2">
                     <label className="text-xs font-bold text-gray-400 uppercase tracking-wider">Why do you want to join Formula Manipal?</label>
                     <textarea name="reason" onChange={handleChange} required rows={4} className="w-full bg-black border border-neutral-700 rounded-xl px-4 py-3 text-white focus:border-red-600 focus:outline-none transition-colors resize-none" placeholder="Tell us about your passion for motorsports..."></textarea>
