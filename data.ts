@@ -1397,8 +1397,10 @@ export const newspaperClippings = [
 ]
 
 export const magazines = [
-    { month: "September", year: "2025", cover: "/covers/september.png",websiteUrl: "https://online.fliphtml5.com/czvap/rrxu/#p=1", pdfUrl: "/magazine/j25.pdf" },
-    { month: "August", year: "2025", cover: "/covers/august.png",websiteUrl: "https://online.fliphtml5.com/czvap/kgsd/#p=1", pdfUrl: "/magazine/august25.pdf" },
+    { month: "November", year: "2025", cover: "/covers/november.png",websiteUrl: "https://online.fliphtml5.com/oxosx/nov25/", pdfUrl: "/magazine/nov25.pdf" },
+    {month: "October", year: "2025", cover: "/covers/october.png",websiteUrl: "https://online.fliphtml5.com/oxosx/oct25/#p=4", pdfUrl: "/magazine/oct25.pdf" },
+    { month: "September", year: "2025", cover: "/covers/september.png",websiteUrl: "https://online.fliphtml5.com/czvap/rrxu/#p=1", pdfUrl: "/magazine/sep25.pdf" },
+    { month: "August", year: "2025", cover: "/covers/august.png",websiteUrl: "https://online.fliphtml5.com/czvap/kgsd/#p=1", pdfUrl: "/magazine/aug25.pdf" },
     {month: "July", year: "2025", cover: "/covers/july.png",websiteUrl: "https://online.fliphtml5.com/czvap/errz/#p=1", pdfUrl: "/magazine/july25.pdf" },
     {month: "June", year: "2025", cover: "/covers/june.png", websiteUrl: "https://online.fliphtml5.com/czvap/itla/#p=1",pdfUrl: "/magazine/june25.pdf" },
     {month: "May", year: "2025", cover: "/covers/may.png", websiteUrl: "https://online.fliphtml5.com/czvap/ljzs/#p=1",pdfUrl: "/magazine/may25.pdf" },
